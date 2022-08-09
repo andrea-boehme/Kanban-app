@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <script src="../assets/js/mini_backend.js"></script>
+    <script src="../assets/js/main.js"> </script>
+    <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
+    <script src="../assets/js/toggle-button.js"></script>
+    <script src="../assets/js/login.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+</head>
+
+<body>
+    <div class="login-bg center">
+        <div class="login center column">
+            <img class="logo" src="../assets/img/logo.png">
+            <div class="login-input center column">
+                <div class=" column">
+                    <span class="text">Name:</span>
+                    <input class="input" id="username" type="text">
+                </div>
+                <div class="column">
+                    <span class="text">Password:</span>
+                    <input class="input" id="password" type="password">
+                </div>
+                <button onclick="login()" class="btn">Login</button>
+                <button onclick="loginGuest()" class="btn-guest">Login as guest</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

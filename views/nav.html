@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+
+    <script src="../assets/js/mini_backend.js"></script>
+    <script src="../assets/js/main.js"> </script>
+    <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
+    <script src="../assets/js/toggle-button.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <div class="navigation">
+            <div class="logo"><img src="../assets/img/logo.png"></div>
+            <div class="toggle hide-toggle">
+                <img id="btn" alt="" src="../assets/img/menu-w.png" onclick="toggle()">
+            </div>
+            <div id="menulist" class="navigation-links">
+                <div class="links"><a href="../views/index.html">Board</a></div>
+                <div class="links"><a href="../views/backlog.html">Backlog</a></div>
+                <div class="links"><a href="../views/add-task.html">Add Task</a></div>
+                <div class="links"><a href="../views/help.html">Help</a></div>
+                <div class="links"><a href="../views/imprint.html">Imprint</a></div>
+                <div class="links"><a href="../views/data-protection.html">Data Protection</a></div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <nav id="navigation-mobil" class="hide-mobil">
+            <div class="navigation-links-mobil">
+                <a href="../views/index.html">Board</a>
+                <a href="../views/backlog.html">Backlog</a>
+                <a href="../views/add-task.html">Add Task</a>
+                <a href="../views/help.html">Help</a>
+                <a href="../views/imprint.html">Imprint</a>
+                <a href="../views/data-protection.html">Data Protection</a>
+            </div>
+        </nav>
+    </aside>
+</body>
+
+</html>

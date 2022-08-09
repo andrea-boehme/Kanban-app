@@ -1,0 +1,90 @@
+/* -------------------------- */
+/*      Custom property       */
+/* -------------------------- */
+:root {
+    --clr-main: #233ac0;
+    --clr-white: white;
+    --clr-grey: grey;
+    --clr-lightgrey: lightgrey;
+    --clr-rgba: rgba(0, 0, 0, 0.2);
+}
+
+/* --------------- */
+/*      Reset      */
+/* --------------- */
+
+/* box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+
+* {
+    margin: 0;
+}
+
+/* set up the body */
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements esier to work with */
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+
+/* --------------- */
+/*  Utility class  */
+/* --------------- */
+
+
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

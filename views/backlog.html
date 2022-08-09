@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlog</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/backlog.css">
+
+    <script src="../assets/js/mini_backend.js"></script>
+    <script src="../assets/js/main.js"> </script>
+    <script src="../assets/js/backlog.js"> </script>
+    <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
+    <script src="../assets/js/toggle-button.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+</head>
+
+<body onload="initBacklog(); includeHTML()">
+    <div w3-include-html="../views/nav.html"></div>
+    <div class="backlog-container">
+        <h2>Backlog</h2>
+        <table class="table">
+            <tbody>
+                <tr class="table-head">
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Assigned to</th>
+                    <th></th>
+                </tr>
+            </tbody>
+            <tbody id="backlogTasks"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>

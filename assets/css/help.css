@@ -1,0 +1,26 @@
+h2{
+    margin-top: 10px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.help-container{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 50px;
+    color: var(--clr-main);
+    width: calc(100% - 300px);
+}
+
+@media(max-width: 860px) {
+    
+    .help-container {
+        margin-top: 120px;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: calc(100% - 80px);
+    }
+}
+

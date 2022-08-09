@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/board.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/add-task.css">
+    <link rel="stylesheet" href="../assets/css/backlog.css">
+    <link rel="stylesheet" href="../assets/css/help.css">
+    <link rel="stylesheet" href="../assets/css/imprint.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <script src="../assets/js/mini_backend.js"></script>
+    <script src="../assets/js/main.js"> </script>
+    <script src="../assets/js/board.js"> </script>
+    <script src="../assets/js/backlog.js"> </script>
+    <script src="../assets/js/add-task.js"> </script>
+    <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
+    <script src="../assets/js/toggle-button.js"></script>
+    <script src="../assets/js/login.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+</head>
+
+<body onload="initBoard(); includeHTML()">
+    <div class="main">
+        <div w3-include-html="../views/nav.html"></div>
+        <div id="board-container" class="board-container">
+            <div class="status-container">
+                <div class="status" ondragover="allowDrop(event);" ondrop="moveTo('toDo');">
+                    <span>TO DO</span>
+                    <div class="status-item" id="toDo"></div>
+                </div>
+                <div class="status" ondragover="allowDrop(event);" ondrop="moveTo('inProgress');">
+                    <span>IN PROGRESS</span>
+                    <div class="status-item" id="inProgress"></div>
+                </div>
+                <div class="status" ondragover="allowDrop(event);" ondrop="moveTo('testing');">
+                    <span>TESTING</span>
+                    <div class="status-item" id="testing"></div>
+                </div>
+                <div class="status" ondragover="allowDrop(event);" ondrop="moveTo('done');">
+                    <span>DONE</span>
+                    <div class="status-item" id="done"></div>
+                </div>
+            </div>
+        </div>
+        <div id="change-task" class="change-task d-none"></div>
+    </div>
+</body>
+
+</html>
