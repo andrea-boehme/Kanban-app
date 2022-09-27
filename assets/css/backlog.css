@@ -1,9 +1,9 @@
 .backlog-container {        
     margin-left: 200px;
-    margin-right: 50px;
+    margin-right: 100px;
     margin-top: 80px;
     color: var(--clr-main);
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
 }
 
 .backlog-container h2 {

@@ -6,7 +6,7 @@
 .board-container {
     display: flex;
     margin-left: 180px;
-    margin-right: 50px;
+    margin-right: 100px;
     text-align: center;
     box-sizing: border-box;
     width: calc(100% - 230px);

@@ -67,7 +67,6 @@ function saveConfirmation() {
                     </div>`;
     setTimeout(() => {
         document.getElementById('save-confirmation').innerHTML = `<div class="hide-task"></div>`;
-        document.getElementById('btn-add').disabled = true;
     }, 3000);
 }
 

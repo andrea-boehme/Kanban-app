@@ -9,9 +9,9 @@ h1 {
 .help-container{
     margin-top: 100px;
     margin-left: 250px;
-    margin-right: 50px;
+    margin-right: 150px;
     color: var(--clr-main);
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
 }
 
 @media(max-width: 860px) {

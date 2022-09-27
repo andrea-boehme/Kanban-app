@@ -12,19 +12,14 @@
     
 }
 
-@media(max-width: 870px) {
-    .add-task-container{
-        margin-left: 180px !important;
-    }
-}
-
 @media(max-width: 860px) {
     .add-task-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
-        margin-left: 50px !important;
+        width: calc(100% - 30px);
+        margin-left: 15px !important;
+        margin-right: 15px !important;
     }
 
     .add-task-container h2 {
@@ -33,10 +28,18 @@
     }
 }
 
+@media(max-width: 380px) {
+    .add-task-container{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        width: calc(100% - 10px);
+    }
+}
+
 .form-container {
     background-color: rgb(238,242,255);
     display: flex;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     border-radius: 15px;
 }
@@ -45,6 +48,13 @@
 
     .form-container {
         flex-direction: column;
+    }
+}
+
+@media(max-width: 380px) {
+
+    .form-container {
+        padding: 10px;
     }
 }
 
@@ -108,7 +118,7 @@ textarea:focus, input:focus{
 
 .userSelected {
     opacity: 1;
-    border: 4px solid var(--clr-main);
+    border: 4px solid transparent;
 }
 
 .button {
