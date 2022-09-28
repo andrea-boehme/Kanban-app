@@ -103,9 +103,44 @@ span {
     background-color: var(--clr-main);
     border-radius: 10px;
     border-width: 2px;
-    padding: 10px;
+    padding: 20px;
     border-color: var(--clr-main);
     color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 860px) {
+
+    .changeText {
+        top: 110px;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+@media(max-width: 450px) {
+
+    .changeText {
+        top: 110px;
+        left: 5px;
+        right: 5px;
+        width: calc(100% - 10px);
+    }
+}
+
+.change-buttons {
+    background-color: #081931;
+    color: var(--clr-white);
+    border: none !important;
+}
+
+.change-buttons:hover {
+    color: var(--clr-main);
+    background-color: var(--clr-white);
+    border: none;
 }
 
 .white-text{
@@ -113,15 +148,15 @@ span {
     text-align: start;
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 
 .inputfields {
     position: relative;
     z-index: 1;
     color: var(--clr-main);
-    width: 90%;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .inputfields input {

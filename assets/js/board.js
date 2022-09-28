@@ -178,8 +178,8 @@ function editTask(id) {
                                     </select>
                                 </div>
 
-                                <button class="change-button" onclick="changeInput(${index})">Change</button>
-                                <button class="close-button" onclick="closeOpenTask()">Cancel</button> 
+                                <button class="change-buttons" onclick="changeInput(${index})">Change</button>
+                                <button class="change-buttons" onclick="closeOpenTask()">Cancel</button> 
                             </div>
                      
                         </div>

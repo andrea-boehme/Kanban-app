@@ -2,7 +2,7 @@
 /*      Custom property       */
 /* -------------------------- */
 :root {
-    --clr-main: #233ac0;
+    --clr-main: #2B3647;
     --clr-white: white;
     --clr-grey: grey;
     --clr-lightgrey: lightgrey;
@@ -88,3 +88,4 @@ textarea {
     display: flex;
     flex-direction: column;
 }
+

@@ -10,17 +10,45 @@
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/help.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
 
     <script src="../assets/js/mini_backend.js"></script>
     <script src="../assets/js/main.js"> </script>
     <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever')</script>
     <script src="../assets/js/toggle-button.js"></script>
+    <script src="../assets/js/nav.js"> </script>
 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 </head>
 
 <body onload="includeHTML()">
-    <div w3-include-html="../views/nav.html"></div>
+    <aside>
+        <div class="navigation">
+            <div class="logo"><img src="../assets/img/logo.png"></div>
+            <div class="toggle hide-toggle">
+                <img id="btn" alt="" src="../assets/img/menu-w.png" onclick="toggle()">
+            </div>
+            <div id="menulist" class="navigation-links">
+                <div id="board" class="links"><img src="../assets/img/board.png"><a href="../views/index.html">Board</div></a>
+                <div id="backlog" class="links"><img src="../assets/img/backlog.png"><a href="../views/backlog.html">Backlog</div></a>
+                <div id="add-task" class="links"><img src="../assets/img/add-task.png"><a href="../views/add-task.html">Add Task</div></a>
+                <div id="help" class="links active"><img src="../assets/img/help.png"><a href="../views/help.html">Help</div></a>
+                <div id="imprint" class="links"><img src="../assets/img/imprint.png"><a href="../views/imprint.html">Imprint</div></a>
+                <div id="legal" class="links"><img src="../assets/img/legal.png"><a href="../views/data-protection.html">Legal Notice</div></a>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <nav id="navigation-mobil" class="hide-mobil">
+            <div class="navigation-links-mobil">
+                <a href="../views/index.html">Board</a>
+                <a href="../views/backlog.html">Backlog</a>
+                <a href="../views/add-task.html">Add Task</a>
+                <a href="../views/help.html">Help</a>
+                <a href="../views/imprint.html">Imprint</a>
+                <a href="../views/data-protection.html">Legal notice</a>
+            </div>
+        </nav>
+    </aside>
     <div class="help-container">
         <h1>Wellcome to Join</h1>
         <p>Join is a web-based Kanban project management application. It enables easy, real-time collaboration between

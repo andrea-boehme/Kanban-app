@@ -2,6 +2,12 @@ h1{
     margin-bottom: 20px;
 }
 
+.imprint-container a {
+    text-decoration: none;
+    font-style: italic;
+    color: var(--clr-main);
+}
+
 .imprint-container{
     margin-top: 100px;
     margin-left: 250px;

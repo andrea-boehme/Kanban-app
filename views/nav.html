@@ -15,6 +15,7 @@
     <script src="../assets/js/main.js"> </script>
     <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
     <script src="../assets/js/toggle-button.js"></script>
+    <script src="../assets/js/nav.js"> </script>
 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 </head>
@@ -28,12 +29,12 @@
                 <img id="btn" alt="" src="../assets/img/menu-w.png" onclick="toggle()">
             </div>
             <div id="menulist" class="navigation-links">
-                <div class="links"><a href="../views/index.html">Board</a></div>
-                <div class="links"><a href="../views/backlog.html">Backlog</a></div>
-                <div class="links"><a href="../views/add-task.html">Add Task</a></div>
-                <div class="links"><a href="../views/help.html">Help</a></div>
-                <div class="links"><a href="../views/imprint.html">Imprint</a></div>
-                <div class="links"><a href="../views/data-protection.html">Data Protection</a></div>
+                <div id="board" onclick="menuHighlight('board')" class="links"><img src="../assets/img/board.png"><a href="../views/index.html">Board</div></a>
+                <div id="backlog" onclick="menuHighlight('backlog')" class="links"><img src="../assets/img/backlog.png"><a href="../views/backlog.html">Backlog</div></a>
+                <div id="add-task" onclick="menuHighlight('add-task')" class="links"><img src="../assets/img/add-task.png"><a href="../views/add-task.html">Add Task</div></a>
+                <div id="help" onclick="menuHighlight('help')" class="links"><img src="../assets/img/help.png"><a href="../views/help.html">Help</div></a>
+                <div id="imprint" onclick="menuHighlight('imprint')" class="links"><img src="../assets/img/imprint.png"><a href="../views/imprint.html">Imprint</div></a>
+                <div id="legal" onclick="menuHighlight('legal')" class="links"><img src="../assets/img/legal.png"><a href="../views/data-protection.html">Legal Notice</div></a>
             </div>
         </div>
         <!-- mobile menu -->
@@ -44,7 +45,7 @@
                 <a href="../views/add-task.html">Add Task</a>
                 <a href="../views/help.html">Help</a>
                 <a href="../views/imprint.html">Imprint</a>
-                <a href="../views/data-protection.html">Data Protection</a>
+                <a href="../views/data-protection.html">Legal notice</a>
             </div>
         </nav>
     </aside>
