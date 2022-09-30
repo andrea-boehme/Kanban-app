@@ -5,11 +5,10 @@ let backlog = [];
  * This function is to load the array "allTasks" that contains all tasks added in add-task sheet
  * 
  */
-async function initBacklog() {
+ async function initBacklog() {
     await loadTasks();
     checkStatus();
-}
-
+ }
 
 /**
  * This function is to filter the tasks in array "allTasks" and address them the status "backlog"
@@ -21,7 +20,6 @@ function checkStatus() {
     }
     updateBacklog();
 }
-
 
 /**
  * This function is to generate the tasks in array "allTasks" and show them in backlog sheet
@@ -51,7 +49,6 @@ function updateBacklog() {
     }
 }
 
-
 /**
  * This function is to address colors to the tasks according to their urgency
  * 
@@ -69,7 +66,6 @@ function colors(backlog) {
     };
     return color;
 }
-
 
 /**
  * This function is to move the task from "backlog" sheet to "board" sheet

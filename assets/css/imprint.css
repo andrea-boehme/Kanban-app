@@ -10,6 +10,7 @@ h1{
 
 .imprint-container{
     margin-top: 100px;
+    margin-bottom: 50px;
     margin-left: 250px;
     margin-right: 150px;
     width: calc(100% - 400px);

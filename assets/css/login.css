@@ -4,12 +4,24 @@
     width: 100vw;
 }
 
+.logo-login {
+    height: 20%;
+    width: 20%;
+    object-fit: contain;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
 input {
-    max-width: 100%;
+    width: 100%;
     padding: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
     border-radius: 8px;
     color: rgba(0, 0, 0, 0.8); 
+}
+
+input:focus {
+  outline: none;
 }
 
 span {
@@ -18,10 +30,45 @@ span {
 }
 
 .login {
+    height: 500px;
+    width: 300px;
     background-color: rgb(180, 180, 180);
-    padding: 100px;
+    padding: 30px;
     border-radius: 25px;
 }
+
+.msg {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    left:10%;
+    color: white;
+    text-align: center;
+}
+
+.show-password {
+    font-style: italic;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: start;
+    color: var(--clr-main);
+}
+
+.show-password checkbox {
+    font-style: italic;
+    cursor: pointer;
+    font-size: 12px;
+   
+}
+
+.show-password input {
+    width: 20px;
+}
+
+input[type=checkbox] {
+    accent-color: white;
+  }
 
 .input {
     margin-bottom: 24px;
@@ -30,8 +77,8 @@ span {
 .btn {
     border: none;
     background-color: var(--clr-main);
-    width: 100px;
-    height: 50px;
+    width:  60px;
+    height: 45px;
     color: white;
     border-radius: 8px;
     padding: 8px;
@@ -40,24 +87,49 @@ span {
     margin-bottom: 24px;
 }
 
-.btn-guest {
+.link {
+    text-align:center; 
+    cursor:pointer; 
+    color:white; 
+    font-style: italic;
+    border-bottom: 1px solid white;
+    padding-bottom: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+.btn {
     border: none;
     background-color: var(--clr-main);
-    width: 120px;
-    height: 40px;
+    width:  70px;
+    height: 45px;
     color: white;
     border-radius: 8px;
     padding: 8px;
     font-family: 'PT Sans', sans-serif;
     cursor: pointer;
     margin-bottom: 24px;
+}
+
+.redirect {
+    display: flex;
+    justify-content: space-around;
     font-size: 12px;
 }
 
 .btn:hover {
-    background-color: #5D5DEA;
+    background-color: #081931;
 }
 
 .btn-guest:hover {
-    background-color: #5D5DEA;
+    background-color: #081931;
 }
+
+.d-none {
+    display: none !important;
+}
+

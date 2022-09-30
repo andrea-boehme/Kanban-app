@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Kanban-App</title>
+    <title>Sign in - Kanban-App</title>
 
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
@@ -17,7 +17,6 @@
     <script>setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');</script>
     <script src="../assets/js/toggle-button.js"></script>
     <script src="../assets/js/login.js"></script>
-    
 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 </head>
@@ -27,26 +26,24 @@
         <div id="msgBox" class="msg"></div>
         <div class="login center column">
             <img class="logo-login" src="../assets/img/logo.png">
-            <form class="column" onsubmit="login(); return false">
+            <form onsubmit="signInBackend(); return false">
                 <div class="column">
-                    <span class="text">Userame:</span>
+                    <span>Userame:</span>
                     <input class="input" id="username" type="text" required>
                 </div>
                 <div class="column">
-                    <span class="text">Password:</span>
+                    <span>Password:</span>
                     <input class="input" id="password" type="password" required>
                 </div>
                 <div class="show-password">
                     <input type="checkbox" onclick="showPassword()">
                     show password
                 </div>
-                <div class="center"><button class="btn" type="submit">Login</button></div>
+                <div class="center"><button class="btn" type="submit">Save</button></div>
             </form>
-            <div class="redirect">
-                <p class="link" onclick="loginGuest()">Login as guest</p>
-                <p class="link" onclick="signIn()">Create account</p>
-            </div>
+            <div class="redirect"><p onclick="backToLogin()" class="link">Back to login</p></div>
         </div>
+        
     </div>
 </body>
 

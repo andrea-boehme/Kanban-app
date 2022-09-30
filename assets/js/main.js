@@ -1,43 +1,46 @@
 /**
- * This function is to include the navigation bar in all sheets of the Kanban
- * 
- */
-async function includeHTML() {
-    let includeElements = document.querySelectorAll('[w3-include-html]');
-    for (let i = 0; i < includeElements.length; i++) {
-        const element = includeElements[i];
-        file = element.getAttribute("w3-include-html"); // "includes/header.html"
-        let resp = await fetch(file);
-        if (resp.ok) {
-            element.innerHTML = await resp.text();
-        } else {
-            element.innerHTML = 'Page not found';
-        }
-    }
-}
-
-/**
  * This function is used to add a simple backend for the tasks
  * smallestBackendEver
  */
-setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');
+ setURL('https://andrea-boehme.developerakademie.net/kanban-app/smallest_backend_ever');
 
 
-/**
- * This function is used to save tasks and updates  as string
- *
+ /**
+  * This function is used to save tasks and updates  as string
+  *
+  */
+ async function save() {
+     await backend.setItem('allTasks', JSON.stringify(allTasks));
+     // window.location.href = 'index.html';
+ }
+ 
+ 
+ /**
+  * This function is used to get and load tasks saved in "allTasks" and "backlog" as arrays
+  *
+  */
+ async function loadTasks() {
+    await downloadFromServer();
+     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+     backlog = JSON.parse(backend.getItem('backlog')) || [];
+ };
+
+ /**
+ * Saves array "allSignedUser" to backend
  */
-function save() {
-    backend.setItem('allTasks', JSON.stringify(allTasks));
+async function saveToBackendSignUps() {
+    await backend.setItem('allSignedUser', JSON.stringify(allSignedUser));
 }
 
-
 /**
- * This function is used to get and load tasks saved in "allTasks" and "backlog" as arrays
- *
+ * Loads array "allSignedUser" from backend
  */
-async function loadTasks() {
+ async function loadAllSignIns() {
     await downloadFromServer();
-    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-    backlog = JSON.parse(backend.getItem('backlog')) || [];
-};
+    allSignedUser = JSON.parse(backend.getItem('allSignedUser')) || [];
+    console.log(allSignedUser);
+}
+
+function logOut() {
+    window.location.href = "./login.html";
+}

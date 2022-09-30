@@ -8,6 +8,15 @@ let userNames = ['Max', 'Will', 'Anna', 'Lucy'];
 
 
 /**
+ * This function is to disable past dates
+ * 
+ */
+function validDate(){
+    let todayDate = new Date().toISOString().split('T')[0];
+    document.getElementsByName('date')[0].setAttribute('min', todayDate);
+}
+
+/**
  * This function is to add new tasks to Kanban. Press the button and the task with the inserted data will be saved in the Array "allTasks"
  * 
  */
@@ -40,7 +49,6 @@ async function addTask() {
     saveConfirmation();
 }
 
-
 /**
  * This function is to clear inputfields so new task can be added
  * 
@@ -54,7 +62,6 @@ function clearInput() {
     assigned.value = '';
     document.getElementById('userImg').src = "../assets/img/profile.png";
 }
-
 
 /**
  * This function is to show a confirmation message to the user that new task is save in backlog

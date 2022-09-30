@@ -58,22 +58,6 @@ textarea {
     display: flex;
 }
 
-.align-items-center {
-    align-items: center;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.flex-direction-column {
-    flex-direction: column;
-}
-
 .d-none {
     display: none !important;
 }

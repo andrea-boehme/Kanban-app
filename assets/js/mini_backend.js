@@ -17,9 +17,11 @@ const backend = {
         return saveJSONToServer();
     }
 };
+/*
 window.onload = async function () {
     downloadFromServer();
 }
+*/
 
 
 /**
@@ -29,7 +31,7 @@ window.onload = async function () {
 async function downloadFromServer() {
     let result = await loadJSONFromServer();
     jsonFromServer = JSON.parse(result);
-    console.log('Loaded', result);
+    //console.log('Loaded', result);
 }
 
 

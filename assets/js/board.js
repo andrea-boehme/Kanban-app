@@ -9,7 +9,7 @@ let currentDraggedElement;
  * This function is to load the array "allTasks" that contains all tasks added in add-task sheet
  * 
  */
-async function initBoard() {
+ async function initBoard() {
     await loadTasks();
     filterTasks();
 }
@@ -157,8 +157,8 @@ function editTask(id) {
                                     <textarea style="resize: none;" cols="28" rows="8" id="Description_${allTasks[index]['description']}" type="text">
                                     </textarea>
                                 </div>
-                                <div class="white-text">Due Date:
-                                    <input type="date" name="Date" id="DueDate_${allTasks[index]['dueDate']}">
+                                <div class="white-text" onclick="validChangedDate()">Due Date:
+                                    <input type="date" name="changedDate" id="DueDate_${allTasks[index]['dueDate']}">
                                 </div>
                                 <div class="white-text">Urgency:
                                     <select class="input" id="Urgency_${allTasks[index]['urgency']}">
@@ -192,6 +192,14 @@ function editTask(id) {
     document.getElementById(`AssignedTo_${allTasks[index]['assigned']}`).value = allTasks[index]['assigned'];
 }
 
+/**
+ * This function is to disable past dates
+ * 
+ */
+ function validChangedDate(){
+    let todayChangedDate = new Date().toISOString().split('T')[0];
+    document.getElementsByName('changedDate')[0].setAttribute('min', todayChangedDate);
+}
 
 /**
  * This function is to change the data in the Array "allTasks" according to the changes made in editTask function

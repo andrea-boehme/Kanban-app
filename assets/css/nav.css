@@ -23,7 +23,7 @@
 }
 
 .logo img {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: 10px;
     height: 50px;
     width: 50px;
@@ -36,12 +36,7 @@
     text-align: start;
     color: var(--clr-white);
     width: 150px;
-}
-
-.links img {
-    height: 10px;
-    width: 10px;
-    margin-left: 25px;
+    font-size: 12px;
 }
 
 .links a {
@@ -52,6 +47,26 @@
     opacity: 0.7;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;    
+    z-index:1;
+}
+
+.links-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    color: var(--clr-white);
+    width: 100%;
+    font-size: 12px;
+}
+
+.links-mobile a {
+    width: 300px;
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
     cursor: pointer;    
     z-index:1;
 }
@@ -68,10 +83,28 @@
     display: none;
 }
 
-.div-link {
-    width: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
+.log-out button{
+    border: none;
+    background-color: var(--clr-main);
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.img-size-1 {
+    height: 15px;
+    width: 15px;
+    margin-left: 25px;
+}
+
+.img-size-2 {
+    height: 20px;
+    width: 20px;
+    margin-left: 25px;
 }
 
 .active {
@@ -86,9 +119,21 @@
 @media(max-width: 860px) {
 
     .logo {
-        margin-top: -15px;
+        margin-top: -30px;
         margin-left: 20px;
 
+    }
+
+    .img-size-1 {
+        margin-left: 30%;
+    }
+    
+    .img-size-2 {
+        margin-left: 30%;
+    }
+
+    .links-mobile a {
+        margin-right: 30%;
     }
 
     .toggle {
@@ -125,11 +170,6 @@
         align-items: center;
     }
 
-    .links a {
-        display: block;
-        height: 100%;
-    }
-
     .hide-toggle {
         display: flex;
     }
@@ -151,6 +191,7 @@
         align-items: center;
         margin-top: 100px;
         margin-bottom: 30px;
+        height: 350px;
         z-index: 9;
         background-color: var(--clr-main);
         width: 100%;
