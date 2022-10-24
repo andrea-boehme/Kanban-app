@@ -15,11 +15,9 @@
 .status-container {
     display: flex;
     justify-content: space-between;
-
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
-
     margin-top: 80px;
     width: 100%;
     height: 100%;
@@ -109,6 +107,16 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media(min-width: 1190px) {
+
+    .status-item {
+        width: 270px;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 10px;
+    }
 }
 
 @media(max-width: 860px) {
