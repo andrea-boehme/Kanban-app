@@ -69,7 +69,7 @@ function updateBoard() {
  * @param {Object[]} element - each task that was generated to the array according to its status
  */
 function generateTaskHTML(element) {
-    return `<div draggable="true" ondragstart="startDragging(${element['id']})" class="tasks">
+    return `<div draggable="true" ondragstart="startDragging(${element['id']})" class="tasks" onclick="editTask(${element['id']})">
                     <div class="task-items"><b>${element['title']}</b></div>
                     <div class="task-items">${element['category']}</div>
                     <div class="task-items">${element['assigned']}</div>
